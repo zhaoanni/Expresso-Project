@@ -1,4 +1,4 @@
-process.env.PORT = 8081;
+process.env.PORT = 8080;
 process.env.TEST_DATABASE = './test/test.sqlite';
 
 const expect = require('chai').expect;
@@ -107,7 +107,7 @@ describe('Timesheet Table', function() {
     });
   });
 
-  it('should have hours, rate, date, and employee_id with appropriate data types', function(done) {
+  it('should have hours, rate, date, and employee_id columns with appropriate data types', function(done) {
     prodDb.run("INSERT INTO Timesheet (hours, rate, date, employee_id) VALUES (10, 2.5, 1506112351471, 1)", function(error) {
       if (error) {
         done(new Error(error));
