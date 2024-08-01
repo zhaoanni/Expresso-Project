@@ -1,5 +1,5 @@
 const bodyParser = require ('body-parser')
-const cors = require ('cors')
+const cors = require('cors');
 const errorhandler = require ('errorhandler')
 const apiRouter = require('./api/api')
 const express = require ('express')

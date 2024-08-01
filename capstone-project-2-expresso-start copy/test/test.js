@@ -5,7 +5,7 @@ const expect = require('chai').expect;
 const request = require('supertest');
 const sqlite3 = require('sqlite3');
 
-const app = require('../b3gtggu7dt 3,,,');
+const app = require('../server.js');
 const seed = require('./seed.js');
 
 const prodDb = new sqlite3.Database('./database.sqlite');
